@@ -72,6 +72,54 @@ namespace Documento {
         #line default
         #line hidden
         
+        
+        #line 40 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem editor;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 41 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem copiar;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 49 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem pegar;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 57 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem cortar;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 65 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem buscar;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 73 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem seleccionarTodo;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -113,6 +161,24 @@ namespace Documento {
             return;
             case 4:
             this.Guardar = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 5:
+            this.editor = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 6:
+            this.copiar = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 7:
+            this.pegar = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 8:
+            this.cortar = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 9:
+            this.buscar = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 10:
+            this.seleccionarTodo = ((System.Windows.Controls.MenuItem)(target));
             return;
             }
             this._contentLoaded = true;
