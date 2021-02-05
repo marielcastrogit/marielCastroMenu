@@ -1,15 +1,9 @@
-﻿using Magnum.FileSystem;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.IO;
-using System.Windows.Input;
 
 namespace Documento
 {
@@ -17,7 +11,9 @@ namespace Documento
     {
         private MainWindow mw;
         private Editor ed;
-        private int esLlamado,esLlamado2;
+        private int esLlamado;
+        private MenuItem itemBuscar;
+        private TextBox cajaTexto;
 
         public Controlador(MainWindow mw)
         {
@@ -29,6 +25,8 @@ namespace Documento
         public Controlador(Editor ed)
         {
             this.ed = ed;
+            itemBuscar = new MenuItem();
+            cajaTexto = new TextBox();
         }
 
 
@@ -45,7 +43,6 @@ namespace Documento
 
         private void mostrarEditor()
         {
-           
             if (esLlamado == 0)//esLlamado vale 0 
             {
                 ed.getRichTextBox().Document.Blocks.Clear();//La proxima vez que se abra el editor aparecera sin caracteres.
@@ -58,6 +55,11 @@ namespace Documento
             e.Cancel = true;//cancela el evento de cerrar la ventana
             ed.Visibility = System.Windows.Visibility.Hidden;//Simplemente guarda la ventana, de alguna forma la oculta
             esLlamado = 0;//es llamado = 0;
+        }
+
+        public void cerrarVentanaWindow(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
         }
 
         public void guardar(Object sender, RoutedEventArgs e)
@@ -77,7 +79,7 @@ namespace Documento
             // en el archivo 
             if (seleccionoGuardar == true)
             {
-             System.IO.File.WriteAllText(sfd.FileName, getContenidoBox(ed.getRichTextBox()));
+                System.IO.File.WriteAllText(sfd.FileName, getContenidoBox(ed.getRichTextBox()));
             }
         }
 
@@ -101,7 +103,7 @@ namespace Documento
 
             if ((bool)seleccionoAbrir)
             {
-                 getContenidoArchivo(ofd.FileName,ed.getRichTextBox());
+                getContenidoArchivo(ofd.FileName, ed.getRichTextBox());
             }
 
         }
@@ -118,16 +120,17 @@ namespace Documento
 
                 //abro el flujo para que abra archivo con el nombre que se espeficio.
                 fStream = new System.IO.FileStream(nombreArchivo, mode: System.IO.FileMode.Open);
-                
+
                 //Cargo el contenido desde el inicio al final transformandolo en texto.
                 range.Load(fStream, System.Windows.DataFormats.Text);
-                
+
                 //cierro el flujo.
                 fStream.Close();
             }
-            
+
+
+
+
         }
-
-
     }
 }

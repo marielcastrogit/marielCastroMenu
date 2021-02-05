@@ -14,7 +14,6 @@ namespace Documento
         {
             InitializeComponent();
             setControles();
-            setComandosEdicion();
             WindowStartupLocation = WindowStartupLocation.CenterScreen;//centra al editor
         }
 
@@ -23,6 +22,12 @@ namespace Documento
             return txtRichBox;
         }
 
+        public Menu getMenu()
+        {
+            return mainMenu;
+        }
+
+
         private void setControles()
         {
             ce = new Controlador(this);
@@ -30,7 +35,6 @@ namespace Documento
             Closing += c;
             abrir.Click += new RoutedEventHandler(ce.abrir);
             guardar.Click += new RoutedEventHandler(ce.guardar);
-
         }
 
         private Controlador ce;

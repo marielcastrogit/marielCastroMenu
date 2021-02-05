@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,10 +33,14 @@ namespace Documento
 
             nuevo.Click += new RoutedEventHandler(c.nuevo);
             Loaded += new RoutedEventHandler(c.cargandoVentana);
-
+            CancelEventHandler ce = new CancelEventHandler(c.cerrarVentanaWindow);
+            Closing += ce;
         }
 
-
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         private Controlador c;
     }
