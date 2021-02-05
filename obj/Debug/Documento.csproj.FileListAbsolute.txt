@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\PRGIITarea\Documento\bin\Debug\Documento.exe.config
+C:\Users\Usuario\Documents\PRGIITarea\Documento\bin\Debug\Documento.exe
+C:\Users\Usuario\Documents\PRGIITarea\Documento\bin\Debug\Documento.pdb
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\App.g.cs
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento_MarkupCompile.cache
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento_MarkupCompile.lref
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.g.resources
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.Properties.Resources.resources
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.exe
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.pdb

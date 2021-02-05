@@ -1,0 +1,41 @@
+﻿<Window x:Class="Documento.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Documento"
+        mc:Ignorable="d"
+        Title="Documentos" Height="600" Width="1000" Icon="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-window-cloud-16.png">
+    <Grid>
+        <Menu x:Name="MenuPrincipal" IsMainMenu="True" Margin="0,0,0,543">
+            
+            <MenuItem Header="Archivo" Width="57" RenderTransformOrigin="0.5,0.5" Height="16">
+                <MenuItem Name="Abrir" Header="Abrir documento">
+                    <MenuItem.Icon>
+                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-documents-folder-16.png">
+                            
+                        </Image>
+                    </MenuItem.Icon>
+                    
+                </MenuItem>
+                <MenuItem Name="Nuevo"  Header="Nuevo documento" >
+                    <MenuItem.Icon>
+                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\new file.png">
+                            
+                        </Image>
+                    </MenuItem.Icon>
+                    
+                </MenuItem>
+                
+                <MenuItem Name="Guardar" Header="Guardar documento">
+                    <MenuItem.Icon>
+                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-save-close-16.png">
+                            
+                        </Image>
+                    </MenuItem.Icon>
+
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
