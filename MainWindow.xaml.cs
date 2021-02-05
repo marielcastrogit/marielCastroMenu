@@ -31,8 +31,6 @@ namespace Documento
             c = new Controlador(this);
 
             nuevo.Click += new RoutedEventHandler(c.nuevo);
-            guardar.Click += new RoutedEventHandler(c.guardar);
-            abrir.Click += new RoutedEventHandler(c.abrir);
             Loaded += new RoutedEventHandler(c.cargandoVentana);
 
         }

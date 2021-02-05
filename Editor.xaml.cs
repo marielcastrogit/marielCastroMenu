@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace Documento
 {
@@ -22,13 +13,29 @@ namespace Documento
         public Editor()
         {
             InitializeComponent();
-            
+            setControles();
         }
 
         public RichTextBox getRichTextBox()
         {
             return txtRichBox;
         }
+
+        public void setTextoBox(string contenido)
+        {
+
+        }
+
+        private void setControles()
+        {
+            ce = new Controlador(this);
+            CancelEventHandler c = new CancelEventHandler(ce.cerrarVentanaEditor);
+            Closing += c;
+            abrir.Click += new RoutedEventHandler(ce.abrir);
+            guardar.Click += new RoutedEventHandler(ce.guardar);
+        }
+
+        private Controlador ce;
     }
 
 

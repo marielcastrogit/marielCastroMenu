@@ -16,28 +16,46 @@ namespace Documento
     {
         private MainWindow mw;
         private Editor ed;
-
-        public void cargandoVentana(object sender, RoutedEventArgs e)
-        {
-        //que inicie con la ventana maximizada
-           mw.WindowState = WindowState.Maximized;
-        }
+        private int esLlamado,esLlamado2;
 
         public Controlador(MainWindow mw)
         {
             this.mw = mw;
             ed = new Editor();
+            esLlamado = 0;
+        }
+
+        public Controlador(Editor ed)
+        {
+            this.ed = ed;
         }
 
 
-        public void nuevo(Object sender, RoutedEventArgs e)
+        public void cargandoVentana(object sender, RoutedEventArgs e)
         {
-            mostrarEditor();
+            //Que inicie con la ventana maximizada
+            mw.WindowState = WindowState.Maximized;
+        }
+
+        public void nuevo(Object sender, RoutedEventArgs e)//Doy click en nuevo
+        {
+            mostrarEditor();//lama al metodo mostrarEditor
         }
 
         private void mostrarEditor()
         {
-            ed.Show();
+           
+            if (esLlamado == 0)//esLlamado vale 0 
+            {
+                ed.Show();//entonces como ha sido llamado 0 veces se abre el Editor
+            }
+        }
+
+        public void cerrarVentanaEditor(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;//cancela el evento de cerrar la ventana
+            ed.Visibility = System.Windows.Visibility.Hidden;//Simplemente guarda la ventana, de alguna forma la oculta
+            esLlamado = 0;//es llamado = 0;
         }
 
         public void guardar(Object sender, RoutedEventArgs e)
@@ -72,7 +90,7 @@ namespace Documento
         public void abrir(Object sender, RoutedEventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Archivos de texto(.txt)|*.txt";
+            ofd.Filter = "Archivos de texto (*.txt)|*.txt|All Files (*.*)|*.*";
             ofd.InitialDirectory = "c:\\"; //Aca le estamos diciendo que tome como directorio de trabajo a la ruta c:
             ofd.RestoreDirectory = true;// pero aca le decimos que una vez que el archivo sea abierto, es decir
             //cuando se cierre el OpenFileDialog se restaure la ruta de trabajo a la misma de siempre
@@ -81,7 +99,7 @@ namespace Documento
 
             if ((bool)seleccionoAbrir)
             {
-                getContenidoArchivo(ofd.FileName,ed.getRichTextBox());
+                 getContenidoArchivo(ofd.FileName,ed.getRichTextBox());
             }
 
         }
@@ -105,6 +123,7 @@ namespace Documento
                 //cierro el flujo.
                 fStream.Close();
             }
+            
         }
 
     }

@@ -8,17 +8,9 @@
         Title="Documentos" Height="600" Width="1000" Icon="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-window-cloud-16.png">
     <Grid>
         <Menu x:Name="MenuPrincipal" IsMainMenu="True" >
-            
+
             <MenuItem Name="archivo" Header="Archivo" Width="57" RenderTransformOrigin="0.5,0.5" Height="16">
-                <MenuItem Name="abrir" Header="Abrir documento">
-                    <MenuItem.Icon>
-                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-documents-folder-16.png">
-                            
-                        </Image>
-                    </MenuItem.Icon>
-                    
-                </MenuItem>
-                <MenuItem Name="nuevo"  Header="Nuevo documento" >
+                <MenuItem Name="nuevo"  Header="Abrir editor" >
                     <MenuItem.Icon>
                         <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\new file.png">
                             
@@ -27,59 +19,9 @@
                     
                 </MenuItem>
                 
-                <MenuItem Name="guardar" Header="Guardar documento">
-                    <MenuItem.Icon>
-                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-save-close-16.png">
-                            
-                        </Image>
-                    </MenuItem.Icon>
-
-                </MenuItem>
+               
             </MenuItem>
-            
-            <MenuItem Name="editor" Header="Herramientas de edicion">
-                <MenuItem Name="copiar" Header="Copiar">
-                    <MenuItem.Icon>
-                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-copy-16.png">
-                            
-                        </Image>
-                    </MenuItem.Icon>
-                </MenuItem>
-
-                <MenuItem Name="pegar" Header="Pegar">
-                    <MenuItem.Icon>
-                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-paste-16.png">
-
-                        </Image>
-                    </MenuItem.Icon>
-                </MenuItem>
-
-                <MenuItem Name="cortar" Header="Cortar">
-                    <MenuItem.Icon>
-                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-cut-16.png">
-
-                        </Image>
-                    </MenuItem.Icon>
-                </MenuItem>
-
-                <MenuItem Name="buscar" Header="Buscar">
-                    <MenuItem.Icon>
-                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-search-16.png">
-
-                        </Image>
-                    </MenuItem.Icon>
-                </MenuItem>
-
-                <MenuItem Name="seleccionarTodo" Header="Seleccionar Todo">
-                    <MenuItem.Icon>
-                        <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-pages-16.png">
-
-                        </Image>
-                    </MenuItem.Icon>
-                </MenuItem>
-
-
-            </MenuItem>
+       
         </Menu>
     </Grid>
 </Window>
