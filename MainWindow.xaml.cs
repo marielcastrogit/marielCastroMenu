@@ -23,6 +23,16 @@ namespace Documento
         public MainWindow()
         {
             InitializeComponent();
+            setControles();
         }
+
+        private void setControles()
+        {
+            c = new Controlador(this);
+
+            nuevo.Click += new RoutedEventHandler(c.nuevo);
+        }
+
+        private Controlador c;
     }
 }

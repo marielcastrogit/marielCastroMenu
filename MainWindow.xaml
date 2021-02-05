@@ -9,8 +9,8 @@
     <Grid>
         <Menu x:Name="MenuPrincipal" IsMainMenu="True" Margin="0,0,0,543">
             
-            <MenuItem Header="Archivo" Width="57" RenderTransformOrigin="0.5,0.5" Height="16">
-                <MenuItem Name="Abrir" Header="Abrir documento">
+            <MenuItem Name="archivo" Header="Archivo" Width="57" RenderTransformOrigin="0.5,0.5" Height="16">
+                <MenuItem Name="abrir" Header="Abrir documento">
                     <MenuItem.Icon>
                         <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-documents-folder-16.png">
                             
@@ -18,7 +18,7 @@
                     </MenuItem.Icon>
                     
                 </MenuItem>
-                <MenuItem Name="Nuevo"  Header="Nuevo documento" >
+                <MenuItem Name="nuevo"  Header="Nuevo documento" >
                     <MenuItem.Icon>
                         <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\new file.png">
                             
@@ -27,7 +27,7 @@
                     
                 </MenuItem>
                 
-                <MenuItem Name="Guardar" Header="Guardar documento">
+                <MenuItem Name="guardar" Header="Guardar documento">
                     <MenuItem.Icon>
                         <Image Source="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-save-close-16.png">
                             
