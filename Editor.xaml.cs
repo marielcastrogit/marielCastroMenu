@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
-
+using System.Windows.Input;
 
 namespace Documento
 {
@@ -14,16 +14,13 @@ namespace Documento
         {
             InitializeComponent();
             setControles();
+            setComandosEdicion();
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;//centra al editor
         }
 
         public RichTextBox getRichTextBox()
         {
             return txtRichBox;
-        }
-
-        public void setTextoBox(string contenido)
-        {
-
         }
 
         private void setControles()
@@ -33,6 +30,7 @@ namespace Documento
             Closing += c;
             abrir.Click += new RoutedEventHandler(ce.abrir);
             guardar.Click += new RoutedEventHandler(ce.guardar);
+
         }
 
         private Controlador ce;

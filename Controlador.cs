@@ -9,6 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.IO;
+using System.Windows.Input;
 
 namespace Documento
 {
@@ -47,6 +48,7 @@ namespace Documento
            
             if (esLlamado == 0)//esLlamado vale 0 
             {
+                ed.getRichTextBox().Document.Blocks.Clear();//La proxima vez que se abra el editor aparecera sin caracteres.
                 ed.Show();//entonces como ha sido llamado 0 veces se abre el Editor
             }
         }
@@ -103,7 +105,7 @@ namespace Documento
             }
 
         }
-        public static void getContenidoArchivo(string nombreArchivo, RichTextBox rtb)
+        public void getContenidoArchivo(string nombreArchivo, RichTextBox rtb)
         {
             TextRange range;
             FileStream fStream;
@@ -125,6 +127,7 @@ namespace Documento
             }
             
         }
+
 
     }
 }
