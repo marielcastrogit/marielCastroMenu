@@ -7,7 +7,7 @@
         mc:Ignorable="d" 
         Title="Documentos" Height="600" Width="1000" Icon="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-window-cloud-16.png">
     <Grid>
-        <Menu x:Name="MenuPrincipal" IsMainMenu="True" Margin="0,0,0,543">
+        <Menu x:Name="MenuPrincipal" IsMainMenu="True" >
             
             <MenuItem Name="archivo" Header="Archivo" Width="57" RenderTransformOrigin="0.5,0.5" Height="16">
                 <MenuItem Name="abrir" Header="Abrir documento">
