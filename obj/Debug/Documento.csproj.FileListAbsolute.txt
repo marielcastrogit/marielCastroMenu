@@ -15,3 +15,8 @@ C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.exe
 C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.pdb
 C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Editor.g.cs
 C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Editor.baml
+C:\Users\Usuario\Documents\PRGIITarea\Documento\bin\Debug\Magnum.dll
+C:\Users\Usuario\Documents\PRGIITarea\Documento\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\Documents\PRGIITarea\Documento\bin\Debug\Magnum.xml
+C:\Users\Usuario\Documents\PRGIITarea\Documento\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Usuario\Documents\PRGIITarea\Documento\obj\Debug\Documento.csproj.CopyComplete

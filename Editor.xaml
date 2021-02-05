@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Editor" Height="500" Width="600">
     <Grid>
-        <RichTextBox HorizontalAlignment="Left" Height="469" VerticalAlignment="Top" Width="592">
+        <RichTextBox x:Name="txtRichBox" HorizontalAlignment="Left" Height="469" VerticalAlignment="Top" Width="592">
             <FlowDocument>
                 <Paragraph>
                     <Run/>

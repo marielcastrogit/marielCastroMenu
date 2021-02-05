@@ -22,6 +22,14 @@ namespace Documento
         public Editor()
         {
             InitializeComponent();
+            
+        }
+
+        public RichTextBox getRichTextBox()
+        {
+            return txtRichBox;
         }
     }
+
+
 }

@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Documento"
-        mc:Ignorable="d"
+        mc:Ignorable="d" 
         Title="Documentos" Height="600" Width="1000" Icon="C:\Users\Usuario\Documents\PRGIITarea\Documento\Resource\icons8-window-cloud-16.png">
     <Grid>
         <Menu x:Name="MenuPrincipal" IsMainMenu="True" Margin="0,0,0,543">
